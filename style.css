@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;    
+}
+
+h1{ background-color: rgba(112, 154, 231, 0.584);  
+    margin:1rem;
+    padding: 1rem;
+    text-align: center;  
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#todo{
+    height:2.3rem;
+    font-size: large;
+    padding:0.5rem;
+    border-radius: 0.5rem;
+}
+#time, #add{
+    height: 2.1rem;
+    font-size: large;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+#add{
+    background-color: rgb(87, 231, 125);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: large;
+    font-weight: 500;
+    cursor: pointer;
+    padding:0 0.5rem;
+}
+.grid-cont{
+    padding:1rem 1rem 0 1rem ;
+    margin-left:0.5rem;
+    margin-right: 0.5rem;
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 16rem 6rem 5rem;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 0rem;
+}
+.container{
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+}
+.container button{
+    background-color: rgb(249, 147, 147);
+    height: 2rem;
+    font-size: large;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0 0.5rem;
+}
+.container span{
+    text-align: center;
+    border-radius: 1rem;
+    padding:0.5rem;
+    font-size: large;
+    align-items: center;
+    word-wrap: break-word;
+    background-color:rgba(170, 226, 185, 0.681)
+}
+.box{
+    margin:0 10%;
+    background-color: blanchedalmond;
+    border-radius: 2rem;
+}
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(112, 154, 231, 0.584);
+  padding:1rem;
+  margin: 2rem 1rem 1rem 1rem;
+  text-align: center;
+}
+#heart{
+    color: red;
+}
+@media screen and (max-width:615px) {
+    .grid-cont{
+        border:solid grey;
+        border-radius: 0.5rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        gap:1rem;
+        margin-top: 0rem;
+        padding: 1rem;
+    }
+    #todo{
+        width:90%;
+        font-size:medium;
+    }
+    .tcont{
+        border:none;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+    }
+}
